@@ -2,8 +2,10 @@ ReplicaNumber: 3
 
 containers:
   containerPort: 8080
-  image: 'quay.io/ditty6765/red-hat-guide:v2'
-  tag: 'base'
+  image: 'quay.io/ditty6765/red-hat-guid'
+  tag: 'chart_v1'
 
 service:
   servicePort: 8080
+
+  
