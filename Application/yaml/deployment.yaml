@@ -2,23 +2,23 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
 # Set your lab user name
-  name: user12-hello-world
+  name: ditty6765-hello-world
 spec:
   replicas: 3
   selector:
     matchLabels:
 # Set your lab user name
-      app: user12-hello-world
+      app: ditty6765-hello-world
   template:
     metadata:
       labels:
 # Set your lab user name
-        app: user12.com-hello-world
+        app: ditty6765.com-hello-world
     spec:
       containers:
         - resources: {}
           terminationMessagePath: /dev/termination-log
-          name: user12
+          name: hello-world
           ports:
             - containerPort: 8080
               protocol: TCP
